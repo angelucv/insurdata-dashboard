@@ -1,0 +1,31 @@
+# Entorno y secretos
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+.eggs/
+
+# Datos locales (evitar subir PDFs y DBs; GitHub limita ~100MB por archivo y repos grandes)
+data/raw/*.pdf
+data/raw/*.xlsx
+data/raw/pdf/
+data/db/local/
+data/processed/*.parquet
+
+# Auditoría local (espejo en disco; opcional versionar)
+data/audit/mirror/**/*.csv
+data/audit/by_source/*.csv
+data/audit/manifest/descargas.csv
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

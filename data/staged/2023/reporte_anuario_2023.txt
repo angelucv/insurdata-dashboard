@@ -1,0 +1,19 @@
+Reporte pipeline anuario 2023
+Generado: 2026-03-08T10:53:15.926452
+
+Fuentes encontradas: 2
+  - seguros-en-cifra-2023.pdf (pdf) -> pdf/seguros-en-cifra-2023.pdf
+  - seguros-en-cifra-2023.xlsx (xlsx) -> pdf/seguros-en-cifra-2023.xlsx
+
+  PDF extraido -> seguros-en-cifra-2023_tables.csv
+
+Vaciado desde: seguros-en-cifra-2023.xlsx (excel_adobe)
+  Entidades: 288, Metricas: 7431
+
+Staged escrito: anuario_2023_entidades.csv, anuario_2023_metricas.csv
+
+--- Resumen para auditoria ---
+  Entidades unicas: 288
+  Filas de metricas: 7431
+  Metricas distintas: 1
+  Entidades en metricas: 271

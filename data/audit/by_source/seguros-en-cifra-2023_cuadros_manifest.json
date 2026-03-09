@@ -1,0 +1,456 @@
+{
+  "anio": 2023,
+  "generado": "2026-03-08T11:00:45.840756",
+  "cuadros": [
+    {
+      "cuadro_id": "4",
+      "pagina": "19",
+      "archivo": "seguros-en-cifra-2023_cuadro_4_p19.csv",
+      "titulo": "PRIMAS NETAS COBRADAS POR RAMO/EMPRESA. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "5A",
+      "pagina": "20-21",
+      "archivo": "seguros-en-cifra-2023_cuadro_5A_p20-21.csv",
+      "titulo": "PRIMAS NETAS COBRADAS POR RAMO/EMPRESA. SEGUROS DE PERSONAS. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "5B",
+      "pagina": "22-24",
+      "archivo": "seguros-en-cifra-2023_cuadro_5B_p22-24.csv",
+      "titulo": "PRIMAS NETAS COBRADAS POR RAMO/EMPRESA. SEGUROS PATRIMONIALES.  SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "5C",
+      "pagina": "25-26",
+      "archivo": "seguros-en-cifra-2023_cuadro_5C_p25-26.csv",
+      "titulo": "PRIMAS NETAS COBRADAS POR RAMO/EMPRESA.SEGUROS OBLIGACIONALES Y/O DE \nRESPONSABILIDAD. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "6",
+      "pagina": "27",
+      "archivo": "seguros-en-cifra-2023_cuadro_6_p27.csv",
+      "titulo": "PRESTACIONES Y SINIESTROS PAGADOS POR RAMO. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "7",
+      "pagina": "28",
+      "archivo": "seguros-en-cifra-2023_cuadro_7_p28.csv",
+      "titulo": "PRESTACIONES Y SINIESTROS PAGADOS POR RAMO/EMPRESA. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "8A",
+      "pagina": "29-30",
+      "archivo": "seguros-en-cifra-2023_cuadro_8A_p29-30.csv",
+      "titulo": "PRESTACIONES Y SINIESTROS PAGADOS POR RAMO/EMPRESA. SEGUROS DE PERSONAS. SEGURO \nDIRECTO"
+    },
+    {
+      "cuadro_id": "8B",
+      "pagina": "31-33",
+      "archivo": "seguros-en-cifra-2023_cuadro_8B_p31-33.csv",
+      "titulo": "PRESTACIONES Y SINIESTROS PAGADOS POR RAMO/EMPRESA.  SEGUROS PATRIMONIALES.  SEGURO \nDIRECTO"
+    },
+    {
+      "cuadro_id": "8C",
+      "pagina": "34-35",
+      "archivo": "seguros-en-cifra-2023_cuadro_8C_p34-35.csv",
+      "titulo": "PRESTACIONES Y SINIESTROS PAGADOS POR RAMO/EMPRESA. SEGUROS OBLIGACIONALES Y/O DE \nRESPONSABILIDAD.SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "9",
+      "pagina": "36",
+      "archivo": "seguros-en-cifra-2023_cuadro_9_p36.csv",
+      "titulo": "RESERVAS TÉCNICAS POR RETENCIÓN PROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "10",
+      "pagina": "37",
+      "archivo": "seguros-en-cifra-2023_cuadro_10_p37.csv",
+      "titulo": "RESERVAS DE PRIMAS POR RAMO"
+    },
+    {
+      "cuadro_id": "11",
+      "pagina": "38",
+      "archivo": "seguros-en-cifra-2023_cuadro_11_p38.csv",
+      "titulo": "RESERVAS DE PRIMAS POR EMPRESA. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "12",
+      "pagina": "39",
+      "archivo": "seguros-en-cifra-2023_cuadro_12_p39.csv",
+      "titulo": "RESERVAS DE PRIMAS POR EMPRESA. SEGUROS DE PERSONAS. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "13",
+      "pagina": "40",
+      "archivo": "seguros-en-cifra-2023_cuadro_13_p40.csv",
+      "titulo": "RESERVAS DE PRIMAS POR EMPRESA. SEGUROS PATRIMONIALES. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "14",
+      "pagina": "41",
+      "archivo": "seguros-en-cifra-2023_cuadro_14_p41.csv",
+      "titulo": "RESERVAS DE PRIMAS POR EMPRESA. SEGUROS OBLIGACIONALES Y/O DE RESPONSABILIDAD. SEGURO \nDIRECTO"
+    },
+    {
+      "cuadro_id": "15",
+      "pagina": "42",
+      "archivo": "seguros-en-cifra-2023_cuadro_15_p42.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR RAMO"
+    },
+    {
+      "cuadro_id": "16",
+      "pagina": "43",
+      "archivo": "seguros-en-cifra-2023_cuadro_16_p43.csv",
+      "titulo": "RESERVA PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR EMPRESA. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "17",
+      "pagina": "44",
+      "archivo": "seguros-en-cifra-2023_cuadro_17_p44.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR EMPRESA. SEGUROS DE \nPERSONAS. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "18",
+      "pagina": "45",
+      "archivo": "seguros-en-cifra-2023_cuadro_18_p45.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR EMPRESA. SEGUROS \nPATRIMONIALES. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "19",
+      "pagina": "46",
+      "archivo": "seguros-en-cifra-2023_cuadro_19_p46.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR EMPRESA. SEGUROS \nOBLIGACIONALES Y/O DE RESPONSABILIDAD. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "20A",
+      "pagina": "47-48",
+      "archivo": "seguros-en-cifra-2023_cuadro_20A_p47-48.csv",
+      "titulo": "RESERVAS DE PRIMAS POR RAMO/EMPRESA. SEGUROS DE PERSONAS. SEGURO DIRECTO RETENCIÓN \nPROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "20B",
+      "pagina": "49-51",
+      "archivo": "seguros-en-cifra-2023_cuadro_20B_p49-51.csv",
+      "titulo": "RESERVAS DE PRIMAS POR RAMO/EMPRESA. SEGUROS PATRIMONIALES. SEGURO DIRECTO RETENCIÓN \nPROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "20C",
+      "pagina": "52-53",
+      "archivo": "seguros-en-cifra-2023_cuadro_20C_p52-53.csv",
+      "titulo": "RESERVAS DE PRIMAS POR RAMO/EMPRESA. SEGUROS OBLIGACIONALES Y/O RESPONSABILIDAD. \nSEGURO DIRECTO RETENCIÓN PROPIA DE LA EMPRESA."
+    },
+    {
+      "cuadro_id": "20D",
+      "pagina": "54-55",
+      "archivo": "seguros-en-cifra-2023_cuadro_20D_p54-55.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR RAMO/EMPRESA. SEGUROS \nDE  PERSONAS. SEGURO DIRECTO RETENCIÓN PROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "20E",
+      "pagina": "56-58",
+      "archivo": "seguros-en-cifra-2023_cuadro_20E_p56-58.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR RAMO/EMPRESA.  SEGUROS \nPATRIMONIALES. SEGURO DIRECTO RETENCIÓN PROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "20F",
+      "pagina": "59-60",
+      "archivo": "seguros-en-cifra-2023_cuadro_20F_p59-60.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO POR RAMO/EMPRESA. SEGUROS \nOBLIGACIONALES Y/O RESPONSABILIDAD. SEGURO DIRECTO RETENCIÓN PROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "21",
+      "pagina": "61",
+      "archivo": "seguros-en-cifra-2023_cuadro_21_p61.csv",
+      "titulo": "INVERSIONES APTAS PARA LA REPRESENTACIÓN DE LAS RESERVAS TÉCNICAS"
+    },
+    {
+      "cuadro_id": "22",
+      "pagina": "62",
+      "archivo": "seguros-en-cifra-2023_cuadro_22_p62.csv",
+      "titulo": "GASTOS DE ADMINISTRACIÓN Vs. PRIMAS NETAS COBRADAS POR EMPRESA. SEGURO DIRECTO, \nREASEGURO ACEPTADO Y SEGUROS SOLIDARIOS"
+    },
+    {
+      "cuadro_id": "23",
+      "pagina": "63",
+      "archivo": "seguros-en-cifra-2023_cuadro_23_p63.csv",
+      "titulo": "GASTOS DE PRODUCCIÓN VS. PRIMAS NETAS COBRADAS POR RAMO. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "23A",
+      "pagina": "64-65",
+      "archivo": "seguros-en-cifra-2023_cuadro_23A_p64-65.csv",
+      "titulo": "COMISIONES Y GASTOS DE ADQUISICIÓN POR RAMO/EMPRESA. SEGUROS DE PERSONAS. SEGURO \nDIRECTO"
+    },
+    {
+      "cuadro_id": "23B",
+      "pagina": "66-68",
+      "archivo": "seguros-en-cifra-2023_cuadro_23B_p66-68.csv",
+      "titulo": "COMISIONES Y GASTOS DE ADQUISICIÓN POR RAMO/EMPRESA. SEGUROS PATRIMONIALES. SEGURO \nDIRECTO"
+    },
+    {
+      "cuadro_id": "23C",
+      "pagina": "69-70",
+      "archivo": "seguros-en-cifra-2023_cuadro_23C_p69-70.csv",
+      "titulo": "COMISIONES Y GASTOS DE ADQUISICIÓN POR RAMO/EMPRESA. SEGUROS OBLIGACIONALES Y/O DE \nRESPONSABILIDAD. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "23D",
+      "pagina": "71-72",
+      "archivo": "seguros-en-cifra-2023_cuadro_23D_p71-72.csv",
+      "titulo": "GASTOS DE ADMINISTRACIÓN POR RAMO/EMPRESA. SEGUROS DE PERSONAS. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "23E",
+      "pagina": "73-75",
+      "archivo": "seguros-en-cifra-2023_cuadro_23E_p73-75.csv",
+      "titulo": "GASTOS DE ADMINISTRACIÓN POR RAMO/EMPRESA. SEGUROS PATRIMONIALES. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "23F",
+      "pagina": "76-77",
+      "archivo": "seguros-en-cifra-2023_cuadro_23F_p76-77.csv",
+      "titulo": "GASTOS DE ADMINISTRACIÓN POR RAMO/EMPRESA. SEGUROS OBLIGACIONALES Y/O DE \nRESPONSABILIDAD. SEGURO DIRECTO"
+    },
+    {
+      "cuadro_id": "24",
+      "pagina": "78",
+      "archivo": "seguros-en-cifra-2023_cuadro_24_p78.csv",
+      "titulo": "BALANCE CONDENSADO"
+    },
+    {
+      "cuadro_id": "25A",
+      "pagina": "79",
+      "archivo": "seguros-en-cifra-2023_cuadro_25A_p79.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. INGRESOS"
+    },
+    {
+      "cuadro_id": "25B",
+      "pagina": "80-81",
+      "archivo": "seguros-en-cifra-2023_cuadro_25B_p80-81.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. EGRESOS"
+    },
+    {
+      "cuadro_id": "26",
+      "pagina": "82",
+      "archivo": "seguros-en-cifra-2023_cuadro_26_p82.csv",
+      "titulo": "GESTIÓN GENERAL DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "27",
+      "pagina": "83",
+      "archivo": "seguros-en-cifra-2023_cuadro_27_p83.csv",
+      "titulo": "RENTABILIDAD DE LAS INVERSIONES"
+    },
+    {
+      "cuadro_id": "28",
+      "pagina": "84",
+      "archivo": "seguros-en-cifra-2023_cuadro_28_p84.csv",
+      "titulo": "RESULTADOS DEL EJERCICIO ECONÓMICO. AÑOS 2019-2023"
+    },
+    {
+      "cuadro_id": "29",
+      "pagina": "85",
+      "archivo": "seguros-en-cifra-2023_cuadro_29_p85.csv",
+      "titulo": "INDICADORES FINANCIEROS. AÑO 2023"
+    },
+    {
+      "cuadro_id": "30",
+      "pagina": "86",
+      "archivo": "seguros-en-cifra-2023_cuadro_30_p86.csv",
+      "titulo": "CÁLCULO DE SUFICIENCIA O INSUFICIENCIA DEL PATRIMONIO PROPIO NO COMPROMETIDO RESPECTO \nAL MARGEN DE SOLVENCIA AL 31/12/2022 Y 31/12/2023"
+    },
+    {
+      "cuadro_id": "31A",
+      "pagina": "87",
+      "archivo": "seguros-en-cifra-2023_cuadro_31A_p87.csv",
+      "titulo": "PRIMAS NETAS COBRADAS POR EMPRESA DE SEGUROS 2023 vs 2022"
+    },
+    {
+      "cuadro_id": "31B",
+      "pagina": "88",
+      "archivo": "seguros-en-cifra-2023_cuadro_31B_p88.csv",
+      "titulo": "PRIMAS NETAS COBRADAS Y SINIESTROS  PAGADOS. SEGURO DIRECTO MÁS REASEGURO ACEPTADO. \nAÑOS 1990 - 2023"
+    },
+    {
+      "cuadro_id": "32",
+      "pagina": "89",
+      "archivo": "seguros-en-cifra-2023_cuadro_32_p89.csv",
+      "titulo": "RESERVAS DE PRIMAS Y RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES POR EMPRESA. \nHOSPITALIZACIÓN, CIRUGÍA Y MATERNIDAD. INDIVIDUAL."
+    },
+    {
+      "cuadro_id": "33",
+      "pagina": "90",
+      "archivo": "seguros-en-cifra-2023_cuadro_33_p90.csv",
+      "titulo": "RESERVAS DE PRIMAS Y RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES  POR EMPRESA. \nHOSPITALIZACIÓN, CIRUGÍA Y MATERNIDAD. COLECTIVO."
+    },
+    {
+      "cuadro_id": "34",
+      "pagina": "91",
+      "archivo": "seguros-en-cifra-2023_cuadro_34_p91.csv",
+      "titulo": "PRIMAS BRUTAS POR RAMO/EMPRESA"
+    },
+    {
+      "cuadro_id": "35",
+      "pagina": "92",
+      "archivo": "seguros-en-cifra-2023_cuadro_35_p92.csv",
+      "titulo": "DEVOLUCIÓN DE PRIMAS POR RAMO/EMPRESA"
+    },
+    {
+      "cuadro_id": "36",
+      "pagina": "93",
+      "archivo": "seguros-en-cifra-2023_cuadro_36_p93.csv",
+      "titulo": "RESERVAS PARA PRESTACIONES Y SINIESTROS PENDIENTES DE PAGO Y OCURRIDOS Y NO NOTIFICADOS \nPOR EMPRESA. RETENCIÓN PROPIA DE LA EMPRESA"
+    },
+    {
+      "cuadro_id": "37",
+      "pagina": "94",
+      "archivo": "seguros-en-cifra-2023_cuadro_37_p94.csv",
+      "titulo": "CANTIDAD DE POLIZAS Y SINIESTROS POR RAMO"
+    },
+    {
+      "cuadro_id": "38",
+      "pagina": "95",
+      "archivo": "seguros-en-cifra-2023_cuadro_38_p95.csv",
+      "titulo": "CANTIDAD DE POLIZAS Y SINIESTROS POR EMPRESA"
+    },
+    {
+      "cuadro_id": "39",
+      "pagina": "101",
+      "archivo": "seguros-en-cifra-2023_cuadro_39_p101.csv",
+      "titulo": "EMPRESAS AUTORIZADAS"
+    },
+    {
+      "cuadro_id": "40",
+      "pagina": "102",
+      "archivo": "seguros-en-cifra-2023_cuadro_40_p102.csv",
+      "titulo": "BALANCE CONDENSADO AL 30/06/2023"
+    },
+    {
+      "cuadro_id": "41A",
+      "pagina": "103",
+      "archivo": "seguros-en-cifra-2023_cuadro_41A_p103.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. INGRESOS AL 30/06/2023"
+    },
+    {
+      "cuadro_id": "41B",
+      "pagina": "104",
+      "archivo": "seguros-en-cifra-2023_cuadro_41B_p104.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. EGRESOS AL 30/06/2023"
+    },
+    {
+      "cuadro_id": "42",
+      "pagina": "105",
+      "archivo": "seguros-en-cifra-2023_cuadro_42_p105.csv",
+      "titulo": "BALANCE CONDENSADO POR EMPRESA AL 30/06/2023"
+    },
+    {
+      "cuadro_id": "43A",
+      "pagina": "106",
+      "archivo": "seguros-en-cifra-2023_cuadro_43A_p106.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. INGRESOS POR EMPRESA AL 30/06/2023"
+    },
+    {
+      "cuadro_id": "43B",
+      "pagina": "107",
+      "archivo": "seguros-en-cifra-2023_cuadro_43B_p107.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. EGRESOS POR EMPRESA AL 30/06/2023"
+    },
+    {
+      "cuadro_id": "44",
+      "pagina": "108",
+      "archivo": "seguros-en-cifra-2023_cuadro_44_p108.csv",
+      "titulo": "INDICADORES FINANCIEROS. AÑO 2023"
+    },
+    {
+      "cuadro_id": "45",
+      "pagina": "108",
+      "archivo": "seguros-en-cifra-2023_cuadro_45_p108.csv",
+      "titulo": "CÁLCULO DE SUFICIENCIA O INSUFICIENCIA DEL PATRIMONIO PROPIO NO COMPROMETIDO RESPECTO \nAL MARGEN DE SOLVENCIA AL 30/06/2022 Y 30/06/2023"
+    },
+    {
+      "cuadro_id": "46",
+      "pagina": "112",
+      "archivo": "seguros-en-cifra-2023_cuadro_46_p112.csv",
+      "titulo": "EMPRESAS AUTORIZADAS"
+    },
+    {
+      "cuadro_id": "47",
+      "pagina": "113",
+      "archivo": "seguros-en-cifra-2023_cuadro_47_p113.csv",
+      "titulo": "BALANCE CONDENSADO"
+    },
+    {
+      "cuadro_id": "48",
+      "pagina": "114",
+      "archivo": "seguros-en-cifra-2023_cuadro_48_p114.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. INGRESOS Y EGRESOS"
+    },
+    {
+      "cuadro_id": "49",
+      "pagina": "115",
+      "archivo": "seguros-en-cifra-2023_cuadro_49_p115.csv",
+      "titulo": "INGRESOS POR EMPRESA"
+    },
+    {
+      "cuadro_id": "50",
+      "pagina": "116",
+      "archivo": "seguros-en-cifra-2023_cuadro_50_p116.csv",
+      "titulo": "CIRCULANTE (ACTIVO) POR EMPRESA"
+    },
+    {
+      "cuadro_id": "51",
+      "pagina": "117",
+      "archivo": "seguros-en-cifra-2023_cuadro_51_p117.csv",
+      "titulo": "GASTOS OPERATIVOS, GASTOS ADMINISTRATIVOS Y GASTOS FINANCIEROS POR EMPRESA"
+    },
+    {
+      "cuadro_id": "52",
+      "pagina": "118",
+      "archivo": "seguros-en-cifra-2023_cuadro_52_p118.csv",
+      "titulo": "INDICADORES FINANCIEROS. AÑO 2023"
+    },
+    {
+      "cuadro_id": "53",
+      "pagina": "121",
+      "archivo": "seguros-en-cifra-2023_cuadro_53_p121.csv",
+      "titulo": "EMPRESAS DE MEDICINA PREPAGADA AUTORIZADAS"
+    },
+    {
+      "cuadro_id": "54",
+      "pagina": "122",
+      "archivo": "seguros-en-cifra-2023_cuadro_54_p122.csv",
+      "titulo": "BALANCE CONDENSADO"
+    },
+    {
+      "cuadro_id": "55A",
+      "pagina": "123",
+      "archivo": "seguros-en-cifra-2023_cuadro_55A_p123.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. INGRESOS"
+    },
+    {
+      "cuadro_id": "55B",
+      "pagina": "124",
+      "archivo": "seguros-en-cifra-2023_cuadro_55B_p124.csv",
+      "titulo": "ESTADO DE GANANCIAS Y PÉRDIDAS. EGRESOS"
+    },
+    {
+      "cuadro_id": "56",
+      "pagina": "125",
+      "archivo": "seguros-en-cifra-2023_cuadro_56_p125.csv",
+      "titulo": "INGRESOS NETOS POR EMPRESA"
+    },
+    {
+      "cuadro_id": "57",
+      "pagina": "126",
+      "archivo": "seguros-en-cifra-2023_cuadro_57_p126.csv",
+      "titulo": "RESERVAS TÉCNICAS POR EMPRESA"
+    },
+    {
+      "cuadro_id": "58",
+      "pagina": "127",
+      "archivo": "seguros-en-cifra-2023_cuadro_58_p127.csv",
+      "titulo": "INDICADORES FINANCIEROS. AÑO 2023"
+    }
+  ]
+}
