@@ -148,17 +148,21 @@ def formato_numero_es(x, decimals=0):
         return str(x)
 
 
-# Pie de página del menú lateral (todas las páginas)
+# Pie de página del menú lateral (unificado Actuarial Cortex)
 SIDEBAR_FOOTER = "Elaborado por el Prof. Angel Colmenares"
-AUTHOR_EMAIL = "angelc.ucv@gmail.com"
+ACTUARIAL_CORTEX_LINE = "© Actuarial Cortex"
+ACTUARIAL_CORTEX_TAGLINE = "Conocimiento · Tecnología · Formación"
+ACTUARIAL_CORTEX_CONTACT = "actuarial.cortex@gmail.com | @actuarial_cortex"
 
 
 def render_sidebar_footer():
-    """Muestra el crédito del autor y correo al final del menú lateral. Llamar desde cada página."""
+    """Muestra el crédito unificado (Prof. + Actuarial Cortex) al final del menú lateral. Llamar desde cada página."""
     import streamlit as st
     st.sidebar.markdown("---")
     st.sidebar.caption(f"**{SIDEBAR_FOOTER}**")
-    st.sidebar.caption(AUTHOR_EMAIL)
+    st.sidebar.caption(ACTUARIAL_CORTEX_LINE)
+    st.sidebar.caption(ACTUARIAL_CORTEX_TAGLINE)
+    st.sidebar.caption(ACTUARIAL_CORTEX_CONTACT)
 
 
 # Estilo moderno para gráficos de torta (Plotly)
