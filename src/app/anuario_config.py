@@ -4,19 +4,49 @@
 # Nombre del aplicativo (sidebar, page_title, etc.)
 APP_NAME = "InsurData-Dashboard del Seguro en Cifras"
 
-# Logos Actuarial Cortex (URLs desde el sitio oficial)
+# Logos Actuarial Cortex (primero sitio oficial; fallback: raw GitHub por si el sitio no sirve el recurso)
 LOGO_ACTUARIAL_CORTEX_SIDEBAR = "https://actuarial-cortex.pages.dev/logo-AC/logo-AC-AC-vertical-blanco.png"
+LOGO_ACTUARIAL_CORTEX_SIDEBAR_FALLBACK = "https://raw.githubusercontent.com/angelucv/actuarial-cortex-site/main/logo-AC/logo-AC-AC-vertical-blanco.png"
 LOGO_ACTUARIAL_CORTEX_INICIO = "https://actuarial-cortex.pages.dev/logo-AC/logo-actuarial-cortex-principal-blanco.png"
+LOGO_ACTUARIAL_CORTEX_INICIO_FALLBACK = "https://raw.githubusercontent.com/angelucv/actuarial-cortex-site/main/logo-AC/logo-actuarial-cortex-principal-blanco.png"
+
+
+def _load_logo_url(primary_url, fallback_url):
+    """Intenta cargar una imagen desde primary_url; si falla, usa fallback_url."""
+    import urllib.request
+    for url in (primary_url, fallback_url):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Streamlit"})
+            with urllib.request.urlopen(req, timeout=5) as r:
+                if r.status == 200:
+                    return url
+        except Exception:
+            continue
+    return None
 
 
 def render_sidebar_logo():
     """Muestra el logo de Actuarial Cortex en la parte superior del menú lateral. Llamar al inicio del sidebar en cada página."""
     import streamlit as st
-    try:
-        st.sidebar.image(LOGO_ACTUARIAL_CORTEX_SIDEBAR, use_container_width=True)
-    except Exception:
+    url = _load_logo_url(LOGO_ACTUARIAL_CORTEX_SIDEBAR, LOGO_ACTUARIAL_CORTEX_SIDEBAR_FALLBACK)
+    if url:
+        try:
+            st.sidebar.image(url, use_container_width=True)
+        except Exception:
+            st.sidebar.caption("Actuarial Cortex")
+    else:
         st.sidebar.caption("Actuarial Cortex")
     st.sidebar.markdown("---")
+
+
+def get_inicio_logo_url():
+    """Devuelve la URL o path del logo principal para la página de inicio. Prioridad: archivo local Logos/, luego URLs."""
+    from pathlib import Path
+    root = Path(__file__).resolve().parent.parent.parent  # raíz del proyecto (src/app -> src -> raíz)
+    local_logo = root / "Logos" / "logo-actuarial-cortex-principal-blanco.png"
+    if local_logo.exists():
+        return str(local_logo)
+    return _load_logo_url(LOGO_ACTUARIAL_CORTEX_INICIO, LOGO_ACTUARIAL_CORTEX_INICIO_FALLBACK)
 
 # Código en BD -> etiqueta en UI (denominación consistente en todo el dashboard)
 SECTORES = {

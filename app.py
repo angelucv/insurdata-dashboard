@@ -14,7 +14,7 @@ if _env.exists():
 import streamlit as st
 
 from src.app.components.auth import check_auth_required, render_login_or_session, logout_button
-from src.app.anuario_config import APP_NAME, render_sidebar_footer, render_sidebar_logo
+from src.app.anuario_config import APP_NAME, render_sidebar_footer, render_sidebar_logo, get_inicio_logo_url
 
 st.set_page_config(
     page_title=f"Inicio | {APP_NAME}",
@@ -35,6 +35,14 @@ st.sidebar.markdown("---")
 st.sidebar.selectbox("Año", options=[2023, 2022, 2021], index=0, key="inicio_anio")
 render_sidebar_footer()
 
+# Logo principal Actuarial Cortex (logo-actuarial-cortex-principal-blanco) en la página de inicio
+logo_url = get_inicio_logo_url()
+if logo_url:
+    try:
+        st.image(logo_url, use_container_width=True)
+    except Exception:
+        pass
+st.markdown("---")
 st.title("Inicio")
 st.markdown("---")
 
