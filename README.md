@@ -2,6 +2,8 @@
 
 Panel de control (dashboard) de inteligencia de negocios basado en datos históricos de la **Superintendencia de la Actividad Aseguradora (SUDEASEG)** de Venezuela. Incluye extracción híbrida (web + PDF + Excel), normalización monetaria con tasas BCV, ETL con pandas, persistencia en **Supabase (PostgreSQL)** y visualización con **Streamlit**.
 
+**Sitio web:** [Actuarial Cortex](https://actuarial-cortex.pages.dev/) — Hub de conocimiento y tecnología actuarial. Este dashboard forma parte de Cortex Suite.
+
 ## Requisitos
 
 - **Python 3.10+**
@@ -52,6 +54,18 @@ sudeaseg-dashboard/
 │   └── processed/         # Parquet listos para BD
 └── requirements.txt
 ```
+
+## Cómo ejecutar en local
+
+```bash
+streamlit run app.py
+```
+
+O con la página de inicio por defecto en el menú: `streamlit run Inicio.py` (si está configurado como entrada principal en Streamlit Cloud).
+
+## Cómo desplegar
+
+El dashboard se despliega en **Streamlit Community Cloud** conectado a este repositorio. En [share.streamlit.io](https://share.streamlit.io) apunta el repo, la rama `main` y el **Main file path** (por ejemplo `app.py` o `Inicio.py`). Los logos y recursos se cargan desde el repo o desde el sitio Actuarial Cortex.
 
 ## Uso
 
