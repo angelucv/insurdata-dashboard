@@ -36,15 +36,17 @@ render_sidebar_footer()
 
 st.title("Inicio")
 try:
-    st.image(LOGO_ACTUARIAL_CORTEX_INICIO, use_column_width=True)
+    st.image(LOGO_ACTUARIAL_CORTEX_INICIO, width=280)
 except Exception:
     pass
 st.markdown("---")
-
+st.markdown("""
+**[Actuarial Cortex](https://actuarial-cortex.pages.dev/)** es un hub de conocimiento y tecnología actuarial. Este **dashboard** forma parte de su oferta para el sector asegurador: explota el anuario «Seguro en Cifras» de la Superintendencia de la Actividad Aseguradora.
+""")
+st.markdown("---")
 st.subheader("¿Qué es este aplicativo?")
 st.markdown("""
-Este **dashboard** explota los datos del **anuario estadístico «Seguro en Cifras»** de la Superintendencia de la Actividad Aseguradora.  
-Permite consultar, por año y por sector, las cifras de **primas**, **siniestros**, **reservas**, **balances**, **estados de resultado**, **listados de empresas** y **capital y garantía**, además de un **análisis CARAMELS** y la descripción del **proceso y flujo** de los datos.
+Este dashboard permite consultar, por año y por sector, las cifras de **primas**, **siniestros**, **reservas**, **balances**, **estados de resultado**, **listados de empresas** y **capital y garantía**, además de un **análisis CARAMELS** y la descripción del **proceso y flujo** de los datos.
 """)
 
 st.subheader("Secciones que lo conforman")
