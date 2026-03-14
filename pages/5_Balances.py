@@ -17,6 +17,7 @@ from src.app.anuario_config import (
     extraer_totales_balance,
     formato_numero_es,
     render_sidebar_footer,
+    render_sidebar_logo,
 )
 
 st.set_page_config(page_title=f"Balances | {APP_NAME}", page_icon="📊", layout="wide")

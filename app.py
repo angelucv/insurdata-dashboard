@@ -14,7 +14,7 @@ if _env.exists():
 import streamlit as st
 
 from src.app.components.auth import check_auth_required, render_login_or_session, logout_button
-from src.app.anuario_config import APP_NAME, render_sidebar_footer
+from src.app.anuario_config import APP_NAME, render_sidebar_footer, render_sidebar_logo
 
 st.set_page_config(
     page_title=f"Inicio | {APP_NAME}",
@@ -28,11 +28,11 @@ if check_auth_required() and not render_login_or_session():
 
 logout_button()
 
+render_sidebar_logo()
 st.sidebar.title(APP_NAME)
 st.sidebar.caption("Datos del anuario estadístico")
 st.sidebar.markdown("---")
 st.sidebar.selectbox("Año", options=[2023, 2022, 2021], index=0, key="inicio_anio")
-st.sidebar.caption("Para que esta página aparezca como **Inicio** en el menú, ejecute: `streamlit run Inicio.py`")
 render_sidebar_footer()
 
 st.title("Inicio")

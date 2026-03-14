@@ -14,7 +14,7 @@ if _env.exists():
 import streamlit as st
 
 from src.app.components.auth import check_auth_required, render_login_or_session, logout_button
-from src.app.anuario_config import APP_NAME, render_sidebar_footer
+from src.app.anuario_config import APP_NAME, render_sidebar_footer, render_sidebar_logo, LOGO_ACTUARIAL_CORTEX_INICIO
 
 st.set_page_config(
     page_title=f"Inicio | {APP_NAME}",
@@ -35,6 +35,10 @@ anio = st.sidebar.selectbox("Año", options=[2023, 2022, 2021], index=0, key="in
 render_sidebar_footer()
 
 st.title("Inicio")
+try:
+    st.image(LOGO_ACTUARIAL_CORTEX_INICIO, use_column_width=True)
+except Exception:
+    pass
 st.markdown("---")
 
 st.subheader("¿Qué es este aplicativo?")

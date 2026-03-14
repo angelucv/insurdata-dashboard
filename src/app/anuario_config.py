@@ -4,6 +4,20 @@
 # Nombre del aplicativo (sidebar, page_title, etc.)
 APP_NAME = "InsurData-Dashboard del Seguro en Cifras"
 
+# Logos Actuarial Cortex (URLs desde el sitio oficial)
+LOGO_ACTUARIAL_CORTEX_SIDEBAR = "https://actuarial-cortex.pages.dev/logo-AC/logo-AC-AC-vertical-blanco.png"
+LOGO_ACTUARIAL_CORTEX_INICIO = "https://actuarial-cortex.pages.dev/logo-AC/logo-actuarial-cortex-principal-blanco.png"
+
+
+def render_sidebar_logo():
+    """Muestra el logo de Actuarial Cortex en la parte superior del menú lateral. Llamar al inicio del sidebar en cada página."""
+    import streamlit as st
+    try:
+        st.sidebar.image(LOGO_ACTUARIAL_CORTEX_SIDEBAR, use_container_width=True)
+    except Exception:
+        st.sidebar.caption("Actuarial Cortex")
+    st.sidebar.markdown("---")
+
 # Código en BD -> etiqueta en UI (denominación consistente en todo el dashboard)
 SECTORES = {
     "seguro_directo": "Empresas de Seguro",

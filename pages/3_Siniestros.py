@@ -8,9 +8,10 @@ import pandas as pd
 import plotly.graph_objects as go
 
 from src.app.components.data_loader import load_anuario_siniestros_por_ramo, load_anuario_siniestros_por_ramo_empresa
-from src.app.anuario_config import APP_NAME, estilizar_df_numeros, render_sidebar_footer
+from src.app.anuario_config import APP_NAME, estilizar_df_numeros, render_sidebar_footer, render_sidebar_logo
 
 st.set_page_config(page_title=f"Siniestros | {APP_NAME}", page_icon="📉", layout="wide")
+render_sidebar_logo()
 st.sidebar.caption(APP_NAME)
 anio = st.sidebar.selectbox("Año", [2023, 2022, 2021], index=0, key="anuario_anio")
 render_sidebar_footer()

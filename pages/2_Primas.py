@@ -15,11 +15,13 @@ from src.app.anuario_config import (
     estilizar_primas_cuadro3_con_subtotales,
     SUBTOTALES_CUADRO_3,
     render_sidebar_footer,
+    render_sidebar_logo,
     LAYOUT_PIE_MODERNO,
     PALETA_PIE_MODERNA,
 )
 
 st.set_page_config(page_title=f"Primas | {APP_NAME}", page_icon="💰", layout="wide")
+render_sidebar_logo()
 st.sidebar.caption(APP_NAME)
 anio = st.sidebar.selectbox("Año", [2023, 2022, 2021], index=0, key="anuario_anio")
 render_sidebar_footer()

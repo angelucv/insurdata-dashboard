@@ -25,6 +25,7 @@ from src.app.anuario_config import (
     formato_numero_es,
     estilizar_df_numeros,
     render_sidebar_footer,
+    render_sidebar_logo,
 )
 
 st.set_page_config(
@@ -51,6 +52,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+render_sidebar_logo()
 st.sidebar.caption(APP_NAME)
 anio_sel = st.sidebar.selectbox("Año", options=[2023, 2022, 2021], index=0, key="cifras_anio")
 render_sidebar_footer()
