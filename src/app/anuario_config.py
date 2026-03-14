@@ -155,10 +155,13 @@ ACTUARIAL_CORTEX_TAGLINE = "Conocimiento · Tecnología · Formación"
 ACTUARIAL_CORTEX_CONTACT = "actuarial.cortex@gmail.com | @actuarial_cortex"
 
 
+ACTUARIAL_CORTEX_SITE_URL = "https://actuarial-cortex.pages.dev/"
+
 def render_sidebar_footer():
     """Muestra el crédito unificado (Prof. + Actuarial Cortex) al final del menú lateral. Llamar desde cada página."""
     import streamlit as st
     st.sidebar.markdown("---")
+    st.sidebar.markdown(f"[Ir a Actuarial Cortex]({ACTUARIAL_CORTEX_SITE_URL})")
     st.sidebar.caption(f"**{SIDEBAR_FOOTER}**")
     st.sidebar.caption(ACTUARIAL_CORTEX_LINE)
     st.sidebar.caption(ACTUARIAL_CORTEX_TAGLINE)
