@@ -48,6 +48,8 @@ st.markdown("---")
 
 st.markdown("""
 **[Actuarial Cortex](https://actuarial-cortex.pages.dev/)** es un hub de conocimiento y tecnología actuarial. Este **dashboard** forma parte de su oferta para el sector asegurador: explota el anuario «Seguro en Cifras» de la Superintendencia de la Actividad Aseguradora.
+
+*Los datos mostrados provienen del anuario estadístico oficial «Seguro en Cifras» (SUDEASEG).*
 """)
 st.markdown("---")
 st.subheader("¿Qué es este aplicativo?")
