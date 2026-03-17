@@ -30,6 +30,10 @@ st.markdown(
     "relación gastos/primas y otros datos por compañía. Sirve como puente entre las cifras agregadas del anuario y "
     "la lectura más detallada que se plantea para futuros demos por empresa."
 )
+st.markdown(
+    "_Ejemplo de uso_: identificar compañías con ratios de gastos/primas o suficiencia patrimonial fuera de los rangos "
+    "habituales del mercado, para priorizar análisis más detallados o acciones de seguimiento."
+)
 
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "Gestión general (26)",

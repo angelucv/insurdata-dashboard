@@ -102,6 +102,17 @@ st.info(
     "El despliegue productivo puede adaptarse a los estados financieros y necesidades específicas de cada entidad."
 )
 
+with st.expander("Short English summary"):
+    st.markdown(
+        "This demo turns the Venezuelan insurance supervisor’s statistical yearbook **“Seguro en Cifras”** "
+        "into an interactive analytical dashboard. It consolidates historical data from PDF and Excel files into "
+        "a relational database, builds technical and regulatory indicators under a **CARAMELS**-inspired framework, "
+        "and illustrates how similar tools can be adapted to insurers, reinsurers, prepaid medicine companies and "
+        "service providers to obtain tailored, near real-time financial and risk insights.\n\n"
+        "The project is developed within **Actuarial Cortex**, a personal hub of actuarial knowledge and technology "
+        "([https://actuarial-cortex.pages.dev](https://actuarial-cortex.pages.dev))."
+    )
+
 st.markdown("---")
 st.subheader("Elaborado por")
 st.markdown("""

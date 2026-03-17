@@ -48,6 +48,11 @@ st.markdown(
     "perfil de riesgo y desempeño del mercado asegurador."
 )
 
+st.markdown(
+    "_Ejemplo de uso_: evaluar si la relación siniestros/primas, la intensidad de reservas y los resultados agregados "
+    "se mantienen alineados con el perfil de riesgo esperado del mercado o si muestran señales de tensión en alguna dimensión."
+)
+
 # Cargar datos
 df_bal = load_anuario_balances_condensados(anio=anio)
 df_cap = load_anuario_capital_garantia_por_empresa(anio=anio)
