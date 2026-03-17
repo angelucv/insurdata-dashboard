@@ -23,7 +23,7 @@ st.sidebar.caption(APP_NAME)
 anio = st.sidebar.selectbox("Año", [2023, 2022, 2021], index=0, key="anuario_anio")
 render_sidebar_footer()
 
-st.title("Estados de resultado (ingresos y egresos)")
+st.title(f"Estados de resultado (ingresos y egresos) — {anio}")
 st.caption("Cuadros 25-A/B, 41-A/B, 48, 55-A/B — Por sector. **Unidad:** miles de bolívares.")
 st.markdown(
     "Los **estados de resultados** sintetizan la capacidad del sector para generar ingresos, absorber egresos y "

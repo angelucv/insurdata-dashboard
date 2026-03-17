@@ -22,7 +22,7 @@ st.sidebar.caption(APP_NAME)
 anio = st.sidebar.selectbox("Año", [2023, 2022, 2021], index=0, key="anuario_anio")
 render_sidebar_footer()
 
-st.title("Indicadores y gestión")
+st.title(f"Indicadores y gestión — {anio}")
 st.caption("Gestión general, indicadores por empresa, suficiencia patrimonio, series históricas, gastos vs primas. **Unidad:** miles de bolívares.")
 st.markdown(
     "Este módulo reúne indicadores que ayudan a interpretar la **gestión** de las entidades aseguradoras: "

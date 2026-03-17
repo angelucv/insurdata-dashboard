@@ -39,7 +39,7 @@ st.sidebar.caption(APP_NAME)
 anio = st.sidebar.selectbox("Año", [2023, 2022, 2021], index=0, key="caramels_anio")
 render_sidebar_footer()
 
-st.title("Análisis CARAMELS")
+st.title(f"Análisis CARAMELS — {anio}")
 st.caption("Marco de supervisión para compañías de seguro: Capital, Activos, Reaseguro, Actuarial, Gestión, Rentabilidad, Liquidez, Sensibilidad. **Unidad:** miles de bolívares.")
 st.markdown(
     "El marco **CARAMELS** organiza la supervisión del sector en ocho dimensiones clave: Capital, Activos, "

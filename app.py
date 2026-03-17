@@ -66,12 +66,30 @@ Este demo es el primer bloque de una suite de análisis actuarial y regulatorio 
 Más allá del anuario, este demo ilustra el tipo de soluciones que pueden desplegarse sobre los estados financieros propios de cada actor del ecosistema: aseguradoras, reaseguradoras, empresas de medicina prepagada, prestadores de servicios y otras organizaciones que necesiten ver sus datos contables como paneles de control vivos, adaptados a su realidad y con métricas accionables en tiempo casi real.
 """)
 
+with st.expander("Short English summary"):
+    st.markdown(
+        "This demo turns the Venezuelan insurance supervisor’s statistical yearbook **“Seguro en Cifras”** "
+        "into an interactive analytical dashboard. It consolidates historical data from PDF and Excel files into "
+        "a relational database, builds technical and regulatory indicators under a **CARAMELS**-inspired framework, "
+        "and illustrates how similar tools can be adapted to insurers, reinsurers, prepaid medicine companies and "
+        "service providers to obtain tailored, near real-time financial and risk insights.\n\n"
+        "The project is developed within **Actuarial Cortex**, a personal hub of actuarial knowledge and technology "
+        "([https://actuarial-cortex.pages.dev](https://actuarial-cortex.pages.dev))."
+    )
+
 st.subheader("¿Cómo usar este dashboard?")
 st.markdown("""
 1. Seleccione el **año** en la barra lateral.
 2. Revise el módulo de **Cifras por sector** para tener una visión panorámica de activos, pasivos y resultados por tipo de entidad.
 3. Profundice en **Primas**, **Siniestros**, **Reservas**, **Balances** y **Estados de resultado** según el foco de análisis.
 4. Utilice **Indicadores y gestión** y el **Análisis CARAMELS** para una lectura estructurada del perfil de riesgo y desempeño.
+""")
+
+st.subheader("¿Quiénes pueden aprovecharlo?")
+st.markdown("""
+- **Reguladores y supervisores**: para apoyar la vigilancia del mercado, la lectura CARAMELS y la comparación de indicadores entre sectores.
+- **Compañías de seguros, reaseguros y medicina prepagada**: como referencia para diseñar tableros propios a partir de sus estados financieros analíticos.
+- **Academia y analistas**: para estudiar la evolución del mercado y construir casos de estudio en cursos de seguros, riesgo y regulación.
 """)
 
 st.subheader("Secciones que lo conforman")

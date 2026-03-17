@@ -54,10 +54,14 @@ st.markdown("""
 
 render_sidebar_logo()
 st.sidebar.caption(APP_NAME)
+st.sidebar.info(
+    "Demo mode: datos consolidados principalmente para 2023. "
+    "Años adicionales se irán incorporando progresivamente."
+)
 anio_sel = st.sidebar.selectbox("Año", options=[2023, 2022, 2021], index=0, key="cifras_anio")
 render_sidebar_footer()
 
-st.title("Cifras por sector")
+st.title(f"Cifras por sector — {anio_sel}")
 st.caption("Superintendencia de la Actividad Aseguradora — Explotación de datos del anuario estadístico. **Año de corte:** datos al cierre del año seleccionado. **Unidad monetaria:** miles de bolívares (salvo indicación contraria en el cuadro).")
 st.markdown(
     "Esta sección ofrece una **vista panorámica** del mercado asegurador por tipo de entidad. "

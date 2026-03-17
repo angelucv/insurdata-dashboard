@@ -21,7 +21,7 @@ st.sidebar.caption(APP_NAME)
 anio = st.sidebar.selectbox("Año", [2023, 2022, 2021], index=0, key="anuario_anio")
 render_sidebar_footer()
 
-st.title("Reservas")
+st.title(f"Reservas — {anio}")
 st.caption("Cuadros 9 a 21, 32, 33 — Técnicas, prima, prestaciones, detalle, inversiones, hospitalización. **Unidad:** miles de bolívares.")
 st.markdown(
     "Las **reservas técnicas** son el corazón de la solvencia actuarial y regulatoria del sector asegurador. "
