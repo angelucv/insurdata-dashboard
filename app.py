@@ -66,6 +66,14 @@ Este demo es el primer bloque de una suite de análisis actuarial y regulatorio 
 Más allá del anuario, este demo ilustra el tipo de soluciones que pueden desplegarse sobre los estados financieros propios de cada actor del ecosistema: aseguradoras, reaseguradoras, empresas de medicina prepagada, prestadores de servicios y otras organizaciones que necesiten ver sus datos contables como paneles de control vivos, adaptados a su realidad y con métricas accionables en tiempo casi real.
 """)
 
+st.subheader("¿Cómo usar este dashboard?")
+st.markdown("""
+1. Seleccione el **año** en la barra lateral.
+2. Revise el módulo de **Cifras por sector** para tener una visión panorámica de activos, pasivos y resultados por tipo de entidad.
+3. Profundice en **Primas**, **Siniestros**, **Reservas**, **Balances** y **Estados de resultado** según el foco de análisis.
+4. Utilice **Indicadores y gestión** y el **Análisis CARAMELS** para una lectura estructurada del perfil de riesgo y desempeño.
+""")
+
 st.subheader("Secciones que lo conforman")
 st.markdown("""
 - **Cifras por sector** — Resumen con resultado por sector, totales de balance (activo, pasivo, utilidad/pérdida) y vista previa de balances y empresas autorizadas.
@@ -81,6 +89,19 @@ st.markdown("""
 - **Proceso y flujo** — Descripción del flujo de datos (extracción, consolidación, esquema, ETL, dashboard).
 """)
 
+st.subheader("Glosario rápido")
+st.markdown("""
+- **Reservas técnicas**: obligaciones estimadas que respaldan los compromisos con los asegurados (prima no devengada, prestaciones, otras reservas).
+- **IBNR**: siniestros ocurridos pero no reportados; parte clave de las reservas de prestaciones.
+- **Capital y garantía**: recursos propios y exigencias patrimoniales que respaldan la operación de las entidades supervisadas.
+- **CARAMELS**: marco de supervisión que resume la situación de una entidad en ocho dimensiones: Capital, Activos, Reaseguro, Actuarial, Gestión, Rentabilidad, Liquidez y Sensibilidad.
+""")
+
+st.info(
+    "Esta es una **versión demo** basada en datos consolidados del anuario «Seguro en Cifras». "
+    "El despliegue productivo puede adaptarse a los estados financieros y necesidades específicas de cada entidad."
+)
+
 st.markdown("---")
 st.subheader("Elaborado por")
 st.markdown("""
@@ -90,3 +111,10 @@ st.markdown("""
 - Perfil en LinkedIn: [angel-colmenares-a2ab06204](https://ve.linkedin.com/in/angel-colmenares-a2ab06204)
 """)
 st.markdown("---")
+
+st.subheader("Próximos pasos")
+st.markdown("""
+- Ampliar la serie histórica incorporando progresivamente los años previos a 2023 a partir de los anuarios en PDF.
+- Integrar de forma sistemática los libros Excel publicados por SUDEASEG a partir de 2024.
+- Desarrollar un **segundo demo** orientado a estados financieros analíticos por empresa, con indicadores avanzados de solvencia, rentabilidad y eficiencia, conectado con este dashboard sectorial.
+""")

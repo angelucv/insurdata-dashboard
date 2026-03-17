@@ -59,6 +59,11 @@ render_sidebar_footer()
 
 st.title("Cifras por sector")
 st.caption("Superintendencia de la Actividad Aseguradora — Explotación de datos del anuario estadístico. **Año de corte:** datos al cierre del año seleccionado. **Unidad monetaria:** miles de bolívares (salvo indicación contraria en el cuadro).")
+st.markdown(
+    "Esta sección ofrece una **vista panorámica** del mercado asegurador por tipo de entidad. "
+    "Resume activos, pasivos y resultado del ejercicio por sector, y sirve como punto de partida antes de profundizar "
+    "en módulos específicos como Primas, Siniestros, Reservas, Balances o Estados de resultado."
+)
 
 df_cuadros = load_anuario_cuadros()
 df_balances = load_anuario_balances_condensados(anio=anio_sel)
@@ -66,8 +71,9 @@ df_listados = load_anuario_listados_empresas(anio=anio_sel)
 
 if df_cuadros.empty:
     st.warning(
-        "No hay datos del anuario. Ejecute en Supabase los DDL (001 a 005), exponga el schema **anuario** "
-        "y ejecute: `python scripts/etl_anuario_a_supabase.py --year 2023`."
+        "No hay datos del anuario para esta vista en la instancia conectada. "
+        "En la versión completa del proyecto, esta sección se alimenta de la base de datos relacional construida "
+        "a partir de los anuarios «Seguro en Cifras»."
     )
     st.stop()
 

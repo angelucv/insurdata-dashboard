@@ -23,6 +23,13 @@ render_sidebar_footer()
 
 st.title("Reservas")
 st.caption("Cuadros 9 a 21, 32, 33 — Técnicas, prima, prestaciones, detalle, inversiones, hospitalización. **Unidad:** miles de bolívares.")
+st.markdown(
+    "Las **reservas técnicas** son el corazón de la solvencia actuarial y regulatoria del sector asegurador. "
+    "Aquí se presentan las principales categorías de reservas del anuario «Seguro en Cifras»: agregados técnicos, "
+    "reservas de prima y de prestaciones por ramo y por empresa, así como componentes asociados a inversiones y "
+    "hospitalización. El objetivo es ofrecer una lectura clara y trazable de las obligaciones que respaldan los "
+    "compromisos con los asegurados."
+)
 
 df_tec = load_anuario_reservas_tecnicas_agregado(anio=anio)
 df_prima = load_anuario_reservas_prima_por_ramo(anio=anio)
@@ -31,7 +38,11 @@ df_prima_emp = load_anuario_reservas_prima_por_empresa(anio=anio)
 df_prest_emp = load_anuario_reservas_prestaciones_por_empresa(anio=anio)
 
 if df_tec.empty and df_prima.empty and df_prest.empty and df_prima_emp.empty and df_prest_emp.empty:
-    st.info("Ejecute el ETL para cargar reservas: `python scripts/etl_anuario_a_supabase.py --year 2023`.")
+    st.info(
+        "En esta instancia no hay datos de reservas disponibles para el año seleccionado. "
+        "En la versión completa del proyecto, este módulo se alimenta de la base de datos relacional del anuario "
+        "«Seguro en Cifras»."
+    )
     st.stop()
 
 tabs = st.tabs([

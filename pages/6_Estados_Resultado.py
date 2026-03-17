@@ -25,11 +25,20 @@ render_sidebar_footer()
 
 st.title("Estados de resultado (ingresos y egresos)")
 st.caption("Cuadros 25-A/B, 41-A/B, 48, 55-A/B — Por sector. **Unidad:** miles de bolívares.")
+st.markdown(
+    "Los **estados de resultados** sintetizan la capacidad del sector para generar ingresos, absorber egresos y "
+    "sostener su rentabilidad. Este módulo permite explorar, por sector y año, los flujos reportados en el anuario "
+    "«Seguro en Cifras», facilitando comparaciones entre seguro directo, reaseguro, financiadoras de primas y medicina prepagada."
+)
 
 df = load_anuario_estados_ingresos_egresos(anio=anio)
 
 if df.empty:
-    st.info("No hay datos de estados de ingresos y egresos. Ejecute el ETL: `python scripts/etl_anuario_a_supabase.py --year 2023`.")
+    st.info(
+        "En esta instancia no hay datos de estados de ingresos y egresos para el año seleccionado. "
+        "En la versión completa del proyecto, esta sección se alimenta de la base de datos relacional construida "
+        "a partir de los cuadros 25-A/B, 41-A/B, 48 y 55-A/B del anuario «Seguro en Cifras»."
+    )
     st.stop()
 
 tab_names = [SECTORES.get(s, s) for s in ORDEN_SECTORES]

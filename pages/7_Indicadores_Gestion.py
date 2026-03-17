@@ -24,6 +24,12 @@ render_sidebar_footer()
 
 st.title("Indicadores y gestión")
 st.caption("Gestión general, indicadores por empresa, suficiencia patrimonio, series históricas, gastos vs primas. **Unidad:** miles de bolívares.")
+st.markdown(
+    "Este módulo reúne indicadores que ayudan a interpretar la **gestión** de las entidades aseguradoras: "
+    "producto de inversiones, indicadores financieros por empresa, suficiencia patrimonial, series históricas de primas, "
+    "relación gastos/primas y otros datos por compañía. Sirve como puente entre las cifras agregadas del anuario y "
+    "la lectura más detallada que se plantea para futuros demos por empresa."
+)
 
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "Gestión general (26)",
@@ -39,7 +45,10 @@ with tab1:
     st.markdown("**Cuadro 26** — Gestión general (producto de inversiones, intereses, etc.).")
     df_gestion = load_anuario_gestion_general(anio=anio)
     if df_gestion.empty:
-        st.info("No hay datos de gestión general. Ejecute el ETL.")
+        st.info(
+            "En esta instancia no hay datos de gestión general para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta del Cuadro 26 del anuario «Seguro en Cifras»."
+        )
     else:
         df_gestion["monto"] = pd.to_numeric(df_gestion["monto"], errors="coerce")
         disp = df_gestion[["concepto", "monto"]].copy()
@@ -49,7 +58,10 @@ with tab2:
     st.markdown("**Indicadores financieros por empresa** (cuadros 29, 44, 52, 58).")
     df_ind = load_anuario_indicadores_financieros_empresa(anio=anio)
     if df_ind.empty:
-        st.caption("Sin datos. Ejecute el ETL: `python scripts/etl_anuario_a_supabase.py --year 2023`.")
+        st.caption(
+            "En esta instancia no hay datos de indicadores financieros por empresa para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta de los cuadros 29, 44, 52 y 58 del anuario."
+        )
     else:
         for cuadro_id, label in [
             ("29", "Cuadro 29 — Empresas de Seguro"),
@@ -102,7 +114,10 @@ with tab3:
     st.markdown("**Suficiencia patrimonio** (cuadros 30, 45).")
     df_suf = load_anuario_suficiencia_patrimonio(anio=anio)
     if df_suf.empty:
-        st.caption("Sin datos. Ejecute el ETL: `python scripts/etl_anuario_a_supabase.py --year 2023`.")
+        st.caption(
+            "En esta instancia no hay datos de suficiencia patrimonial para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta de los cuadros 30 y 45 del anuario."
+        )
     else:
         for cid, label in [("30", "Cuadro 30 — Empresas de Seguro"), ("45", "Cuadro 45 — Empresas de Reaseguro")]:
             sub = df_suf[df_suf["cuadro_id"] == cid]
@@ -115,7 +130,10 @@ with tab4:
     st.markdown("**Series históricas primas** (cuadros 31-A, 31-B).")
     df_series = load_anuario_series_historicas_primas(anio=anio)
     if df_series.empty:
-        st.caption("Sin datos. Ejecute el ETL.")
+        st.caption(
+            "En esta instancia no hay series históricas de primas cargadas para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta de los cuadros 31-A y 31-B."
+        )
     else:
         for cid, label in [("31-A", "Cuadro 31-A — Primas netas 2023 vs 2022"), ("31-B", "Cuadro 31-B — Primas/prestaciones 1990-2023")]:
             sub = df_series[df_series["cuadro_id"] == cid]
@@ -142,7 +160,10 @@ with tab5:
     st.markdown("**Gastos vs primas** (cuadros 22, 23).")
     df_gastos = load_anuario_gastos_vs_primas(anio=anio)
     if df_gastos.empty:
-        st.caption("Sin datos. Ejecute el ETL.")
+        st.caption(
+            "En esta instancia no hay datos de gastos vs primas para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta de los cuadros 22 y 23 del anuario."
+        )
     else:
         for cid, label in [("22", "Cuadro 22 — Gastos administración vs primas por empresa"), ("23", "Cuadro 23 — Gastos producción vs primas por ramo")]:
             sub = df_gastos[df_gastos["cuadro_id"] == cid]
@@ -170,7 +191,10 @@ with tab6:
     st.markdown("**Datos por empresa** (cuadros 27, 28, 34-36, 49-51, 56, 57).")
     df_datos = load_anuario_datos_por_empresa(anio=anio)
     if df_datos.empty:
-        st.caption("Sin datos. Ejecute el ETL.")
+        st.caption(
+            "En esta instancia no hay datos por empresa para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta de los cuadros 27, 28, 34-36, 49-51, 56 y 57."
+        )
     else:
         labels_cuadros = [
             ("27", "Cuadro 27 — Rentabilidad inversiones"), ("28", "Cuadro 28 — Resultados 2019-2023"),
@@ -191,7 +215,10 @@ with tab7:
     st.markdown("**Cantidad pólizas y siniestros** (cuadros 37, 38).")
     df_pol = load_anuario_cantidad_polizas_siniestros(anio=anio)
     if df_pol.empty:
-        st.caption("Sin datos. Ejecute el ETL.")
+        st.caption(
+            "En esta instancia no hay datos de cantidad de pólizas y siniestros para el año seleccionado. "
+            "En la versión completa del proyecto, esta vista se alimenta de los cuadros 37 y 38 del anuario."
+        )
     else:
         for cid, label in [("37", "Cuadro 37 — Por ramo"), ("38", "Cuadro 38 — Por empresa")]:
             sub = df_pol[df_pol["cuadro_id"] == cid]

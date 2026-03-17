@@ -41,6 +41,12 @@ render_sidebar_footer()
 
 st.title("Análisis CARAMELS")
 st.caption("Marco de supervisión para compañías de seguro: Capital, Activos, Reaseguro, Actuarial, Gestión, Rentabilidad, Liquidez, Sensibilidad. **Unidad:** miles de bolívares.")
+st.markdown(
+    "El marco **CARAMELS** organiza la supervisión del sector en ocho dimensiones clave: Capital, Activos, "
+    "Reaseguro, Actuarial, Gestión, Rentabilidad, Liquidez y Sensibilidad. Este módulo explota los datos del anuario "
+    "«Seguro en Cifras» para construir indicadores sintéticos por dimensión, ofreciendo una lectura estructurada del "
+    "perfil de riesgo y desempeño del mercado asegurador."
+)
 
 # Cargar datos
 df_bal = load_anuario_balances_condensados(anio=anio)
@@ -52,7 +58,11 @@ df_est = load_anuario_estados_ingresos_egresos(anio=anio)
 df_gest = load_anuario_gestion_general(anio=anio)
 
 if df_bal.empty and df_primas.empty:
-    st.info("No hay datos suficientes para el análisis CARAMELS. Ejecute el ETL del anuario.")
+    st.info(
+        "No hay datos suficientes para el análisis CARAMELS en la instancia conectada. "
+        "En la versión completa del proyecto, este módulo se alimenta de balances, primas, siniestros, reservas, "
+        "estados de resultado e indicadores de gestión derivados del anuario «Seguro en Cifras»."
+    )
     st.stop()
 
 # Helpers
