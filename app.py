@@ -54,7 +54,16 @@ st.markdown("""
 st.markdown("---")
 st.subheader("¿Qué es este aplicativo?")
 st.markdown("""
-Este dashboard permite consultar, por año y por sector, las cifras de **primas**, **siniestros**, **reservas**, **balances**, **estados de resultado**, **listados de empresas** y **capital y garantía**, además de un **análisis CARAMELS** y la descripción del **proceso y flujo** de los datos.
+El anuario estadístico **«Seguro en Cifras»** concentra la mejor fotografía disponible del mercado asegurador venezolano, pero durante años ha estado distribuido en anuarios PDF y, más recientemente, en libros Excel que heredan decisiones de indexación que dificultan el análisis histórico fino (como cuadros que fijan 2007 como año base y dejan períodos completos en cero). Este proyecto busca transformar ese insumo en una base analítica coherente y explotable.
+
+Este demo es el primer bloque de una suite de análisis actuarial y regulatorio que persigue:
+
+- Integrar la serie histórica del anuario (PDF + Excel) en una **base de datos relacional** estructurada, apoyada en procesos de **extracción, transformación y carga (ETL)** que convierten tablas de los anuarios y archivos PDF en datos accionables.
+- Reorganizar la lectura sectorial en vistas claras de **primas**, **siniestros**, **reservas**, **balances**, **estados de resultado**, **indicadores de gestión** e interpretación bajo un marco **CARAMELS** adaptado al contexto venezolano.
+- Generar indicadores derivados que respeten la trazabilidad con los cuadros oficiales, pero que acerquen el lenguaje del anuario a la gestión diaria del riesgo y la solvencia.
+- Preparar el terreno para un segundo demo centrado en **estados financieros analíticos por empresa**, con indicadores profundos de solvencia, rentabilidad y eficiencia.
+
+Más allá del anuario, este demo ilustra el tipo de soluciones que pueden desplegarse sobre los estados financieros propios de cada actor del ecosistema: aseguradoras, reaseguradoras, empresas de medicina prepagada, prestadores de servicios y otras organizaciones que necesiten ver sus datos contables como paneles de control vivos, adaptados a su realidad y con métricas accionables en tiempo casi real.
 """)
 
 st.subheader("Secciones que lo conforman")
