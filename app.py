@@ -44,12 +44,26 @@ if logo_url:
         pass
 st.markdown("---")
 st.title("Inicio")
+
+with st.expander("Short English summary", expanded=True):
+    st.markdown(
+        "This demo turns the Venezuelan insurance supervisor’s statistical yearbook **“Seguro en Cifras”** "
+        "into an interactive analytical dashboard. It consolidates historical data from PDF and Excel files into "
+        "a relational database, builds technical and regulatory indicators under a **CARAMELS**-inspired framework, "
+        "and illustrates how similar tools can be adapted to insurers, reinsurers, prepaid medicine companies and "
+        "service providers to obtain tailored, near real-time financial and risk insights.\n\n"
+        "The project is developed within **Actuarial Cortex**, a personal hub of actuarial knowledge and technology "
+        "([https://actuarial-cortex.pages.dev](https://actuarial-cortex.pages.dev))."
+    )
+
 st.markdown("---")
 
 st.markdown("""
 **[Actuarial Cortex](https://actuarial-cortex.pages.dev/)** es un hub de conocimiento y tecnología actuarial. Este **dashboard** forma parte de su oferta para el sector asegurador: explota el anuario «Seguro en Cifras» de la Superintendencia de la Actividad Aseguradora.
 
 *Los datos mostrados provienen del anuario estadístico oficial «Seguro en Cifras» (SUDEASEG).*
+
+_El sitio web de Actuarial Cortex está en construcción, pero ya permite explorar el contexto general del proyecto y otros demos relacionados._
 """)
 st.markdown("---")
 st.subheader("¿Qué es este aplicativo?")
